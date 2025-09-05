@@ -1,11 +1,104 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #edf2fb 0%, #c1b1d2 60%, #6b47dc 100%);
     margin: 0;
     padding: 0;
+    color: #222;
 }
-h1 {
-    color: #333;
+
+header {
+    background: #6b47dc;
+    color: white;
+    padding: 40px 10px 20px 10px;
     text-align: center;
-    margin-top: 50px;
+    box-shadow: 0 4px 20px rgba(0,0,50,0.1);
+    border-radius: 0 0 24px 24px;
+    animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #a693ef;
+}
+
+section {
+    max-width: 650px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 2px 12px rgba(107, 71, 220, 0.12);
+    border-radius: 18px;
+    padding: 30px 24px;
+}
+
+h2 {
+    color: #6b47dc;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+ul li {
+    background: #eee;
+    padding: 10px 22px;
+    border-radius: 18px;
+    box-shadow: 0 1px 4px #c1b1d2;
+    margin: 6px 0;
+    font-size: 1em;
+}
+
+.project-card {
+    background: #f7f5fb;
+    border: 1px solid #c1b1d2;
+    box-shadow: 0 2px 8px rgba(107, 71, 220, 0.09);
+    border-radius: 16px;
+    padding: 18px 14px;
+    margin-bottom: 16px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(107,71,220,0.15);
+}
+
+footer {
+    background: #6b47dc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 20px 20px 0 0;
+    margin-top: 30px;
+    font-size: 1.1em;
 }
